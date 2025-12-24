@@ -27,16 +27,42 @@ Minimalist configuration for SwayFX (Wayland).
 
 ## Key Bindings
 
-| Keybind | Action |
-| :--- | :--- |
-| `Mod` + `Enter` | Terminal |
-| `Mod` + `d` | App Launcher |
-| `Mod` + `n` | File Manager |
-| `Mod` + `Shift` + `q` | Kill Focused Window |
-| `Mod` + `Shift` + `s` | Screenshot (Region) |
-| `Mod` + `Shift` + `x` | Lock Screen |
-| `Mod` + `Shift` + `c` | Reload Config |
-| `Mod` + `Shift` + `e` | Exit Session |
+<details>
+<summary><b>Click to view full keybindings list</b></summary>
+
+| Keybind | Action | Command |
+| :--- | :--- | :--- |
+| **Applications** | | |
+| `Mod` + `Enter` | Open Terminal | `$term` (Kitty) |
+| `Mod` + `n` | Open File Manager | `thunar` |
+| `Mod` + `d` | App Launcher | `rofi -show drun` |
+| `Mod` + `Shift` + `d` | Run Command | `rofi -show run` |
+| `Mod` + `.` | Emoji Picker | `rofi -show emoji` |
+| `Mod` + `c` | Clipboard Manager | `greenclip` |
+| **System** | | |
+| `Mod` + `Shift` + `q` | Kill Focused Window | `kill` |
+| `Mod` + `Shift` + `x` | Lock Screen | `swaylock` |
+| `Mod` + `Shift` + `c` | Reload Configuration | `reload` |
+| `Mod` + `Shift` + `e` | Exit Sway | `swaynag` |
+| **Screenshots** | | |
+| `Mod` + `Shift` + `s` | Region Screenshot | `grim` + `slurp` |
+| `Print` | Full Screenshot | `grim` |
+| **Window Management** | | |
+| `Mod` + `f` | Toggle Fullscreen | `fullscreen` |
+| `Mod` + `Shift` + `Space` | Toggle Floating | `floating toggle` |
+| `Mod` + `b` | Split Horizontal | `splith` |
+| `Mod` + `v` | Split Vertical | `splitv` |
+| `Mod` + `s` | Stacking Layout | `layout stacking` |
+| `Mod` + `w` | Tabbed Layout | `layout tabbed` |
+| `Mod` + `e` | Toggle Split | `layout toggle split` |
+| `Mod` + `Minus` | Scratchpad (Show) | `scratchpad show` |
+| `Mod` + `Shift` + `Minus` | Scratchpad (Move) | `move scratchpad` |
+| **Hardware / Media** | | |
+| `Vol Up/Down/Mute` | Audio Control | `pactl` |
+| `Bright Up/Down` | Brightness Control | `brightnessctl` |
+| `Play/Next/Prev` | Media Control | `playerctl` |
+
+</details>
 
 ## Utilities Setup
 
