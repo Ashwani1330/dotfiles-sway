@@ -223,8 +223,8 @@ bindsym $mod+r mode "resize"
     # Special keys to adjust brightness via brightnessctl
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
-    # Special key to take a screenshot with grim
-    bindsym Print exec grim
+    # Special key to take a screenshot with grim and notify
+    bindsym Print exec grim "/home/ashwani/Pictures/Screenshots/$(date +'%Y-%m-%d-%H%M%S_grim.png')" && notify-send "Screenshot Saved" "Image saved to ~/Pictures/Screenshots/"
 
     # audio control
     bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause 
